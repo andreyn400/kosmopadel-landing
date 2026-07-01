@@ -9,77 +9,19 @@
   body {
     background: #ffffff;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 44px;
-    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
   }
   .mark {
     width: min(280px, 60vw);
     height: auto;
   }
   .mark path { fill: red; }
-
-  /* Контейнер кнопок */
-  .buttons {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 14px;
-  }
-
-  /* Стиль кнопки — общий для всех виджетов */
-  .cta {
-    display: inline-block;
-    background: red;
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: 600;
-    letter-spacing: 0.01em;
-    padding: 15px 34px;
-    border-radius: 100px;
-    cursor: pointer;
-    transition: opacity 0.2s ease, transform 0.2s ease;
-  }
-  .cta:hover { opacity: 0.88; transform: translateY(-1px); }
 </style>
 </head>
 <body>
-
-  <!-- ЛОГОТИП -->
   <svg class="mark" viewBox="0 0 78.87 42.67" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Космо Падел">
     <path d="M32.79,21.34c0-10.72,20.63-19.42,46.07-19.42V0H0v42.67h78.87v-1.92c-25.44,0-46.07-8.69-46.07-19.42Z"/>
   </svg>
-
-  <!-- ================================================================= -->
-  <!-- КНОПКИ ВИДЖЕТОВ                                                    -->
-  <!-- 1 виджет = 1 кнопка здесь + 1 <script> в блоке ниже.              -->
-  <!-- href="#ТРИГГЕР" — это код из VivaCRM ("для кнопки укажите URL").   -->
-  <!-- ================================================================= -->
-  <div class="buttons">
-
-    <!-- Виджет 1 -->
-    <a href="#gEZ20" class="cta">Оставить заявку</a>
-
-    <!-- ШАБЛОН НОВОЙ КНОПКИ · скопируйте строку, поменяйте #ТРИГГЕР и текст:
-    <a href="#ТРИГГЕР" class="cta">Текст кнопки</a>
-    -->
-
-  </div>
-
-  <!-- ================================================================= -->
-  <!-- СКРИПТЫ ВИДЖЕТОВ                                                   -->
-  <!-- По одному <script> на каждый виджет. src — ссылка из VivaCRM.      -->
-  <!-- ================================================================= -->
-
-  <!-- Виджет 1 -->
-  <script src="https://supadb.vivacrm.ru/storage/v1/object/public/widgets/67d30ccf-9c73-4619-a915-04b6691ccbc4.js"></script>
-
-  <!-- ШАБЛОН НОВОГО СКРИПТА · скопируйте строку, вставьте src из VivaCRM:
-  <script src="ССЫЛКА_ИЗ_VIVACRM"></script>
-  -->
-
 </body>
 </html>
